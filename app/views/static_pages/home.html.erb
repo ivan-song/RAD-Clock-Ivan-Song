@@ -3,5 +3,32 @@
   <h2>
     Clock+ built by Ivan Song - s3664454 - Pass Level - Friday 4:30 pm Anto Dominic
   </h2>
+  <h4>
+  Business Time <%= image_tag("green.png", alt: "Green logo", :size => "15x15") %><br>
+  Business Overtime <%= image_tag("yellow.jpg", alt: "Yellow logo", :size => "15x15") %><br>
+  Personal Time <%= image_tag("red.png", alt: "Red logo", :size => "15x15") %><br>
+  Sleeping Time <%= image_tag("grey.png", alt: "Grey logo", :size => "15x15") %><br>
+  </h4>
+
+  <h3>
+  <table>
+    <tr>
+      <td>Melbourne<h5>current time</h5></td>
+      <td><%= Time.zone.now.strftime("%H:%M:%S") %></td>
+      <td>Personal Hour</td>
+    </tr>
+    <tr>
+      <td>Seoul<br><h5>-1h</h5></td>
+      <td><%= Time.use_zone("Seoul") do Time.zone.now.strftime("%H:%M:%S") end %></td>
+      <td>Sleeping Hour</td>
+    </tr>
+    <tr>
+      <td>New York City<h5>-14h</h5></td>
+      <td><%= Time.use_zone("Eastern Time (US & Canada)") do Time.zone.now.strftime("%H:%M:%S") end %></td>
+      <td>Business Hour</td>
+    </tr>
+  </table>
+  </h3>
+  
   
 </div>
