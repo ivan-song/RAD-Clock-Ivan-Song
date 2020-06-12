@@ -97,17 +97,6 @@ input {
   margin-left: 0;
 }
 
-/* miscellaneous */
-
-.debug_dump {
-  clear: both;
-  float: left;
-  width: 100%;
-  margin-top: 45px;
-  -moz-box-sizing:    border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing:         border-box;
-}
 
 /* universal */
 
@@ -206,16 +195,9 @@ footer {
       margin-left: 15px;
     }
   }
-}
-
-/* Users index */
-
-.users {
-  list-style: none;
-  margin: 0;
-  li {
-    overflow: auto;
-    padding: 10px 0;
-    border-bottom: 1px solid $gray-lighter;
+  
+  .image-size {
+    max-width: 300px;
+    max-height: 200px;
   }
 }
