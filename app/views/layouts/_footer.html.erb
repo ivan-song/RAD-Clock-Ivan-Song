@@ -1,15 +1,20 @@
 <footer class="footer">
 
   <small>
-    The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+    Clock+ <br>
+    email: s3664454@student.rmit.edu.au <br>
+    Pass Level
   </small>
 
   <nav>
     <ul>
-      <li><%= link_to "About", about_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
-      <li><a href="http://news.railstutorial.org/">News</a></li>
+      <li>Share<br>Social</li>
+      <li><%= link_to image_tag("facebook.png", alt: "Facebook logo", :size => "50x50"),
+      'http://facebook.com/' %></li>
+      <li><%= link_to image_tag("twitter.png", alt: "Twitter logo", :size => "50x50"),
+      'http://twitter.com/' %></li>
+      <li><%= link_to image_tag("linkedin.png", alt: "Linkedin logo", :size => "50x50"),
+      'http://linkedin.com/' %></li>
     </ul>
   </nav>
 
